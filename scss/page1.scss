@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  max-width: 1200px;
+  font-family: sans-serif;
+  margin: auto;
+}
+
+.notification-bar {
+  margin: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .time {
+    font-size: 35px;
+  }
+
+  .corner-icons {
+    img {
+      height: 40px;
+      margin-right: 7px;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 212px;
+  font-size: 105px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+
+  .tm {
+    font-size: 14px;
+    padding: 0 0 32px 7px;
+  }
+
+  .Logomark {
+    padding: 0 45px 85px 0;
+    width: 130px;
+  }
+}
+
+.picture {
+  position: relative;
+  height: auto;
+
+  .commercial {
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 150px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 150px, 100% 100%, 0 100%);
+    width: 100%;
+    transform: translate(0px, 5px);
+  }
+
+  .transparency {
+    position: absolute;
+    height: 38%;
+    bottom: 0;
+    background-image: linear-gradient(
+      to left,
+      rgba(10, 165, 171, 0.7),
+      rgba(0, 82, 140, 0.7)
+    );
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+    width: 100%;
+  }
+}
+
+.content {
+  background-image: linear-gradient(90deg, #0aa5ab 0%, #00528c 100%);
+  transform: translate(0, -41px);
+  color: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+
+  .page1-container {
+    margin: 40px;
+    height: 806px;
+
+    .title {
+      font-size: 70px;
+      padding-top: 30px;
+      font-weight: 600;
+      padding-bottom: 25px;
+    }
+
+    .description {
+      font-size: 40px;
+      font-weight: 100;
+      line-height: 55px;
+    }
+
+    .btn {
+      &,
+      &:link,
+      &:visited {
+        display: block;
+        text-transform: uppercase;
+        font-size: 32px;
+        font-weight: 600;
+        text-decoration: none;
+        margin-top: 30px;
+        padding: 4% 13%;
+        border-radius: 10rem;
+        transition: all 0.2s;
+        word-spacing: 4px;
+        background-color: white;
+
+        color: rgba(0, 157, 224, 1);
+        text-align: center;
+
+        .arrow {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+.login-question {
+  text-align: center;
+  font-size: 35px;
+  color: grey;
+  padding-bottom: 60px;
+
+  .login {
+    text-decoration: none;
+    padding-top: 15px;
+    display: block;
+    color: #444444;
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
