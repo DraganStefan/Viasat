@@ -1,22 +1,31 @@
-import Card from "../components/card";
-import questionIconBlack from "../images/question-icon-black.png";
-import questionIconGrey from "../images/question-icon-grey.png";
-import toolIcon from "../images/tool-icon.png";
-import routerIcon from "../images/router-icon.png";
+import Card from '../components/card';
+import questionIconBlack from '../images/question-icon-black.png';
+import questionIconGrey from '../images/question-icon-grey.png';
+import toolIcon from '../images/tool-icon.png';
+import routerIcon from '../images/router-icon.png';
 
 export default function Page2(props) {
   return (
     <div className="container">
-      <div className="action-primary">
-        <span>Buy Viasat</span>
-        <img src={questionIconBlack} className="questonIconBlack" alt="icon" />
-      </div>
-      <div className="action-secondary">
-        <div>Select a plan</div>
-        <div className="progress-bar">
-          <div className="progress-bar-content" style={{ width: "25%" }} />
+      <div className="header">
+        <div className="action-primary">
+          <span>Buy Viasat</span>
+          <img
+            src={questionIconBlack}
+            className="questonIconBlack"
+            alt="icon"
+          />
+        </div>
+        <div className="action-secondary">
+          <div>Select a plan</div>
+          <div className="progress-bar">
+            <div className="progress-bar-content" style={{ width: '25%' }} />
+          </div>
         </div>
       </div>
+
+      <div className="spacer" />
+
       <div className="description">
         <div className="line-1">
           <span>All our plans include:</span>
@@ -30,21 +39,10 @@ export default function Page2(props) {
           <img src={routerIcon} className="description-icon" alt="icon" />
           <span>Wifi router</span>
         </div>
-        <div className="line-4">
+        <div className="required">
           <span>Required *</span>
           <img src={questionIconGrey} className="questonIcon" alt="icon" />
         </div>
-      </div>
-
-      <div className="sticky-buttons">
-        <a href="#" className="button back" onClick={props.onClick}>
-          <span className="custom-arrow left" />
-          BACK
-        </a>
-        <a href="#" className="button next disabled">
-          NEXT
-          <span className="custom-arrow right" />
-        </a>
       </div>
 
       <Card
@@ -68,6 +66,12 @@ export default function Page2(props) {
         internet="50 Mbps, 100 Gb priority data"
         price="19,99"
       />
+
+      <div className="optional">
+        <span>Optional</span>
+        <img src={questionIconGrey} className="questonIcon" alt="icon" />
+      </div>
+
       <Card
         icon="card-icon4.png"
         title="Netflix"
@@ -86,6 +90,21 @@ export default function Page2(props) {
         description="Best for TV and Netflix"
         price="8"
       />
+
+      <div className="footer">
+        <div className="charge-total">Total now: 0€</div>
+        <div className="charge-monthly">Monthly charge: 0€</div>
+        <div className="page2-buttons">
+          <a href="#" className="button back" onClick={props.onClick}>
+            <span className="custom-arrow left" />
+            BACK
+          </a>
+          <a href="#" className="button next disabled">
+            NEXT
+            <span className="custom-arrow right" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

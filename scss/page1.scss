@@ -10,10 +10,15 @@
 }
 
 .notification-bar {
-  margin: 12px;
+  padding: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: white;
+
   .time {
     font-size: 35px;
   }
@@ -27,12 +32,13 @@
 }
 
 .logo {
+  padding-top: 56px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   height: 212px;
   font-size: 105px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 900;
 
   .tm {
