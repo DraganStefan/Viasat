@@ -24,72 +24,72 @@ export default function Page2(props) {
         </div>
       </div>
 
-      <div className="spacer" />
+      <div className="page2-content">
+        <div className="description">
+          <div className="line-1">
+            <span>All our plans include:</span>
+            <img src={questionIconGrey} className="questonIcon" alt="icon" />
+          </div>
+          <div className="line-2-3">
+            <img src={toolIcon} className="description-icon" alt="icon" />
+            <span>Free professional wquipmend and installation</span>
+          </div>
+          <div className="line-2-3">
+            <img src={routerIcon} className="description-icon" alt="icon" />
+            <span>Wifi router</span>
+          </div>
+          <div className="required">
+            <span>Required *</span>
+            <img src={questionIconGrey} className="questonIcon" alt="icon" />
+          </div>
+        </div>
 
-      <div className="description">
-        <div className="line-1">
-          <span>All our plans include:</span>
+        <Card
+          icon="card-icon1.png"
+          title="ILIMITADA 50"
+          description="Best for TV and Netflix"
+          internet="50 Mbps, 100 Gb priority data"
+          price="69,99"
+        />
+        <Card
+          icon="card-icon2.png"
+          title="ILIMITADA 30"
+          description="Best for TV and Netflix"
+          internet="50 Mbps, 100 Gb priority data"
+          price="29,99"
+        />
+        <Card
+          icon="card-icon3.png"
+          title="ILIMITADA 20"
+          description="Best for TV and Netflix"
+          internet="50 Mbps, 100 Gb priority data"
+          price="19,99"
+        />
+
+        <div className="optional">
+          <span>Optional</span>
           <img src={questionIconGrey} className="questonIcon" alt="icon" />
         </div>
-        <div className="line-2-3">
-          <img src={toolIcon} className="description-icon" alt="icon" />
-          <span>Free professional wquipmend and installation</span>
-        </div>
-        <div className="line-2-3">
-          <img src={routerIcon} className="description-icon" alt="icon" />
-          <span>Wifi router</span>
-        </div>
-        <div className="required">
-          <span>Required *</span>
-          <img src={questionIconGrey} className="questonIcon" alt="icon" />
-        </div>
+
+        <Card
+          icon="card-icon4.png"
+          title="Netflix"
+          description="Best for TV and Netflix"
+          price="10"
+        />
+        <Card
+          icon="card-icon5.png"
+          title="IHBO"
+          description="Best for TV and Netflix"
+          price="13"
+        />
+        <Card
+          icon="card-icon6.png"
+          title="Disney +"
+          description="Best for TV and Netflix"
+          price="8"
+        />
       </div>
-
-      <Card
-        icon="card-icon1.png"
-        title="ILIMITADA 50"
-        description="Best for TV and Netflix"
-        internet="50 Mbps, 100 Gb priority data"
-        price="69,99"
-      />
-      <Card
-        icon="card-icon2.png"
-        title="ILIMITADA 30"
-        description="Best for TV and Netflix"
-        internet="50 Mbps, 100 Gb priority data"
-        price="29,99"
-      />
-      <Card
-        icon="card-icon3.png"
-        title="ILIMITADA 20"
-        description="Best for TV and Netflix"
-        internet="50 Mbps, 100 Gb priority data"
-        price="19,99"
-      />
-
-      <div className="optional">
-        <span>Optional</span>
-        <img src={questionIconGrey} className="questonIcon" alt="icon" />
-      </div>
-
-      <Card
-        icon="card-icon4.png"
-        title="Netflix"
-        description="Best for TV and Netflix"
-        price="10"
-      />
-      <Card
-        icon="card-icon5.png"
-        title="IHBO"
-        description="Best for TV and Netflix"
-        price="13"
-      />
-      <Card
-        icon="card-icon6.png"
-        title="Disney +"
-        description="Best for TV and Netflix"
-        price="8"
-      />
 
       <div className="footer">
         <div className="charge-total">Total now: 0€</div>

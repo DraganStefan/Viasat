@@ -106,17 +106,17 @@
 
 .container {
   max-width: 1200px;
-  padding: 0 50px;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #32424e; }
-  .container .spacer {
-    height: 345px; }
+  color: #32424e;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
   .container .header {
     margin-top: 56px;
-    position: fixed;
     background-color: white;
-    left: 50px;
-    right: 50px; }
+    height: 286px;
+    margin-bottom: 100px;
+    padding: 0 50px; }
     .container .header .action-primary {
       font-size: 56px;
       font-weight: 700;
@@ -148,41 +148,41 @@
           width: 100%;
           background-color: #0aa5ab;
           margin: 0 5px; }
-  .container .description {
-    margin: 108px 0 21px 0; }
-    .container .description .line-1 {
-      font-size: 33px;
-      font-weight: 700;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 45px; }
-    .container .description .line-2-3 {
-      font-size: 33px;
-      font-weight: 400;
-      margin-bottom: 40px; }
-    .container .description .required {
+  .container .page2-content {
+    overflow: auto;
+    flex-grow: 1;
+    padding: 0 50px; }
+    .container .page2-content .description {
+      margin: 60px 0 21px 0; }
+      .container .page2-content .description .line-1 {
+        font-size: 33px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px; }
+      .container .page2-content .description .line-2-3 {
+        font-size: 33px;
+        font-weight: 400;
+        margin-bottom: 40px; }
+      .container .page2-content .description .required {
+        font-size: 33px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between; }
+      .container .page2-content .description .questonIcon {
+        width: 56px; }
+      .container .page2-content .description .description-icon {
+        width: 50px;
+        margin-right: 20px; }
+    .container .page2-content .optional {
+      margin: 56px 0 21px 0;
       font-size: 33px;
       font-weight: 700;
       display: flex;
       justify-content: space-between; }
-    .container .description .questonIcon {
-      width: 56px; }
-    .container .description .description-icon {
-      width: 50px;
-      margin-right: 20px; }
-  .container .optional {
-    margin: 56px 0 21px 0;
-    font-size: 33px;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between; }
-    .container .optional .questonIcon {
-      width: 56px; }
+      .container .page2-content .optional .questonIcon {
+        width: 56px; }
   .container .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 375px;
     background-color: #f2f5f8;
     display: flex;
